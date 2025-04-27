@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Articles</h1>
+    <h1>Articles:</h1>
     <input type="text" placeholder="Search..." id="search">
     <a href="#">Search</a>
     <br>
@@ -26,7 +26,7 @@
         <tr>
             <td style="text-align: center; background-color: antiquewhite;"><%= articles[i].title %></td>
             <td style="text-align: center; background-color: antiquewhite;"><%= articles[i].content %></td>
-            <td style="text-align: center; background-color: rgb(230, 133, 6);"><a href="./article.ejs articles[i].title %>&_content=<%= articles[i].content %>">View</a></td>
+            <td style="text-align: center; background-color: rgb(230, 133, 6);"><a href="./article.ejs?_title=<%= articles[i].title %>&_content=<%= articles[i].content %>">View</a></td>
         </tr>
         <% } %>
     </table>
