@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+</head>
+<body>
+    <h1>Students</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <% for (let i = 0; i < students.length; i++) { %>
+        <tr>
+            <td style="text-align: center;"><%= students[i].name %></td>
+            <td style="text-align: center;"><%= students[i].age %></td>
+        </tr>
+        <% } %>
+    </table>
+</body>
+</html>

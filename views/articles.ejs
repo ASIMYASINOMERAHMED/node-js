@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Articles</h1>
+    <input type="text" placeholder="Search..." id="search">
+    <a href="#">Search</a>
+    <br>
+    <input type="text" placeholder="Title..." id="title">
+    <br>
+    <input type="text" placeholder="Content..." id="content">
+    <br>
+    <a href="#">Add Article</a>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Action</th>
+        </tr>
+        <% for (let i = 0; i < articles.length; i++) { %>
+        <tr>
+            <td style="text-align: center; background-color: antiquewhite;"><%= articles[i].title %></td>
+            <td style="text-align: center; background-color: antiquewhite;"><%= articles[i].content %></td>
+            <td style="text-align: center; background-color: rgb(230, 133, 6);"><a href="./article.ejs articles[i].title %>&_content=<%= articles[i].content %>">View</a></td>
+        </tr>
+        <% } %>
+    </table>
+</body>
+</html>
